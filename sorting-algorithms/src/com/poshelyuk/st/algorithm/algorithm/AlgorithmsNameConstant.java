@@ -19,7 +19,7 @@ public class AlgorithmsNameConstant {
     public static final String SHELL_SORT = "SHELL_SORT";
 
     public static final String TIMSORT = "TIMSORT";
-    
+
     public static final String TREE_SORT = "TREE_SORT";
-    
+
 }

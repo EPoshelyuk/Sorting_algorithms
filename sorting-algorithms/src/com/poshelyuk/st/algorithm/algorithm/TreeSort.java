@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import static com.poshelyuk.st.algorithm.algorithm.AlgorithmsNameConstant.TREE_SORT;
 
 public class TreeSort implements Sortable {
-
     @Override
     public int[] sort(int[] array) {
         Tree tree = new Tree(array[0]);
@@ -16,12 +15,10 @@ public class TreeSort implements Sortable {
         tree.inOrder(tree.node, list);
         return list.stream().mapToInt(num -> num).toArray();
     }
-
     @Override
     public String getName() {
         return TREE_SORT;
     }
-
     class Node {
         int value;
         Node left;
@@ -33,14 +30,11 @@ public class TreeSort implements Sortable {
             right = null;
         }
     }
-
     class Tree {
         Node node;
-
         Tree(int value) {
             node = new Node(value);
         }
-
         public Node insert(Node node, int value) {
             if (node == null) {
                 return new Node(value);
@@ -66,7 +60,6 @@ public class TreeSort implements Sortable {
                 inOrder(node.right, list);
             }
         }
-
     }
 
 }

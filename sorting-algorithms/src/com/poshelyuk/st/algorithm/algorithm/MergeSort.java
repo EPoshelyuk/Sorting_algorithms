@@ -3,14 +3,12 @@ package com.poshelyuk.st.algorithm.algorithm;
 import static com.poshelyuk.st.algorithm.algorithm.AlgorithmsNameConstant.MERGE_SORT;
 
 public class MergeSort implements Sortable {
-
     @Override
     public int[] sort(int[] array) {
         var length = array.length;
         mergeSort(array, length);
         return new int[0];
     }
-
     private void mergeSort(int[] array, int length) {
         if (length < 2) {
             return;
@@ -48,7 +46,6 @@ public class MergeSort implements Sortable {
             a[k++] = r[j++];
         }
     }
-
     @Override
     public String getName() {
         return MERGE_SORT;

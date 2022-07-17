@@ -5,7 +5,6 @@ import com.poshelyuk.st.algorithm.algorithm.*;
 import static com.poshelyuk.st.algorithm.algorithm.AlgorithmsNameConstant.*;
 
 public class Main {
-
     public static void main(String[] args) {
         var hundredElements = ArrayUtils.getMapWithTheSameArrays(100);
         var thousandElements = ArrayUtils.getMapWithTheSameArrays(1000);
@@ -23,7 +22,6 @@ public class Main {
         var heapSort = new HeapSort();
         var countingSort = new CountingSort();
         var treeSort = new TreeSort();
-
 
         System.out.println("---------------------------------------------");
 

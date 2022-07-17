@@ -3,7 +3,6 @@ package com.poshelyuk.st.algorithm.algorithm;
 import static com.poshelyuk.st.algorithm.algorithm.AlgorithmsNameConstant.SHELL_SORT;
 
 public class ShellSort implements Sortable {
-
     @Override
     public int[] sort(int[] array) {
         int inner;
@@ -32,7 +31,6 @@ public class ShellSort implements Sortable {
         }
         return array;
     }
-
     @Override
     public String getName() {
         return SHELL_SORT;

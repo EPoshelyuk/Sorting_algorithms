@@ -4,8 +4,7 @@ import static com.poshelyuk.st.algorithm.algorithm.AlgorithmsNameConstant.TIMSOR
 
 public class Timsort implements Sortable {
 
-    private static int MIN_MERGE = 32;
-
+    private static final int MIN_MERGE = 32;
     @Override
     public int[] sort(int[] array) {
         int length = array.length;
@@ -49,7 +48,6 @@ public class Timsort implements Sortable {
         }
         return array;
     }
-
     private int minRunLength(int n) {
         assert n >= 0;
 
@@ -125,7 +123,6 @@ public class Timsort implements Sortable {
             j++;
         }
     }
-
     @Override
     public String getName() {
         return TIMSORT;

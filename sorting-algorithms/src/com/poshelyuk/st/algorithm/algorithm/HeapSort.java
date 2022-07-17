@@ -3,7 +3,6 @@ package com.poshelyuk.st.algorithm.algorithm;
 import static com.poshelyuk.st.algorithm.algorithm.AlgorithmsNameConstant.HEAP_SORT;
 
 public class HeapSort implements Sortable {
-
     @Override
     public int[] sort(int[] array) {
         int n = array.length;
@@ -51,7 +50,6 @@ public class HeapSort implements Sortable {
         }
 
     }
-
     @Override
     public String getName() {
         return HEAP_SORT;
