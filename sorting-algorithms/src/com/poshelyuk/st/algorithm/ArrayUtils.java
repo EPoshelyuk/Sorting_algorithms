@@ -8,9 +8,11 @@ import java.util.Map;
 import static com.poshelyuk.st.algorithm.algorithm.AlgorithmsNameConstant.*;
 
 public class ArrayUtils {
+
     public static void display(int[] array) {
         System.out.print(Arrays.toString(array));
     }
+
     public static int[] getArrayWithСertainElements(int amount) {
         var array = new ArrayList<Integer>();
         for (int i = 0; i < amount; i++) {
@@ -19,6 +21,7 @@ public class ArrayUtils {
         Collections.shuffle(array);
         return array.stream().mapToInt(num -> num).toArray();
     }
+
     public static Map<String, int[]> getMapWithTheSameArrays(int arraySize) {
         int[] array = getArrayWithСertainElements(arraySize);
         return Map.of(

@@ -8,7 +8,7 @@ import java.time.Instant;
 public class TimeDifferenceUtils {
     public static void calculateExecutionTime(Sortable sortAlg, int[] array) {
         var start = Instant.now();
-        int[] sort = sortAlg.sort(array);
+        sortAlg.sort(array);
         var end = Instant.now();
         var timeElapsed = Duration.between(start, end);
 

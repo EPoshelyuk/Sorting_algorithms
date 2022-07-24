@@ -3,6 +3,7 @@ package com.poshelyuk.st.algorithm.algorithm;
 import static com.poshelyuk.st.algorithm.algorithm.AlgorithmsNameConstant.COUNTING_SORT;
 
 public class CountingSort implements Sortable {
+
     @Override
     public int[] sort(int[] array) {
         int size = array.length;
@@ -44,6 +45,7 @@ public class CountingSort implements Sortable {
         }
         return array;
     }
+
     @Override
     public String getName() {
         return COUNTING_SORT;

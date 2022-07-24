@@ -3,12 +3,14 @@ package com.poshelyuk.st.algorithm.algorithm;
 import static com.poshelyuk.st.algorithm.algorithm.AlgorithmsNameConstant.QUICK_SORT;
 
 public class QuickSort implements Sortable {
+
     @Override
     public int[] sort(int[] array) {
         int begin = 0;
         int end = array.length - 1;
         return quickSort(array, begin, end);
     }
+
     @Override
     public String getName() {
         return QUICK_SORT;
@@ -23,6 +25,7 @@ public class QuickSort implements Sortable {
         }
         return array;
     }
+
     private int partition(int[] array, int begin, int end) {
         int pivot = array[end];
         int i = (begin - 1);

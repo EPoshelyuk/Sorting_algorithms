@@ -3,6 +3,7 @@ package com.poshelyuk.st.algorithm.algorithm;
 import static com.poshelyuk.st.algorithm.algorithm.AlgorithmsNameConstant.SELECTION_SORT;
 
 public class SelectionSort implements Sortable {
+
     @Override
     public int[] sort(int[] array) {
         for (int i = 0; i < array.length; i++) {
@@ -20,6 +21,7 @@ public class SelectionSort implements Sortable {
         }
         return array;
     }
+
     @Override
     public String getName() {
         return SELECTION_SORT;
